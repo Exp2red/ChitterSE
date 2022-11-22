@@ -55,7 +55,7 @@ async function app(){
 async function predictimage(){
     img_ = document.getElementById('idImage');
     if (img_.src != ""){
-        const result = await net.classify(img_);
+        const result = await net.classify(img_); //change to whatever the python function will be called
         drawStacked(result);
         console.log(result);
     }
